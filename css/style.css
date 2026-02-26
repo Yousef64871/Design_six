@@ -1,0 +1,171 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body {
+    background-color: hsl(221, 100%, 96%);
+    font-family: "Hanken Grotesk" , sans-serif;
+}
+.feature {
+    padding-bottom: 40px;
+    padding-top: 40px;
+    height: 100%;
+    margin: 90px;
+}
+.feature .container {
+    width: 700px;
+    background-color: hsl(0, 0%, 100%);
+    display: grid;
+    margin: auto;
+    grid-template-columns: repeat(auto-fill , minmax(350px ,1fr));
+    border-radius: 25px;
+}
+.feature .container .column .content-col {
+    text-align: center;
+    background: linear-gradient(to bottom, hsl(250.16deg 97.93% 62.16%) , hsl(241.58deg 82.61% 54.9%) 50% 60%);
+    height: 100%;
+    border-radius: 25px;
+}
+.feature .container .column .content-col h3 { 
+    color: hsl(241, 100%, 89%);
+    margin: 0;
+    padding-top: 35px;
+}
+.feature .container .column .content-col .count {
+    border-radius: 50%;
+    background:linear-gradient(to bottom ,hsla(256, 72%, 46%, 1) , hsla(241, 72%, 46%, 0));
+    width: 190px;
+    margin: 0 auto;
+    margin-top: 39px;
+    height: 190px;
+}                                                                                                           
+.feature .container .column .content-col .count h1 {
+    font-size: 80px;
+    color: white;
+    margin: 0;
+    margin-top: 40px;
+    padding-top: 45px;
+}
+.feature .container .column .content-col .count h1 span {
+    font-size: 15px;
+    color: hsl(204deg 7.77% 62.16%);
+    display: block;
+}
+.feature .container .column .content-col .text {
+    width: 65%;
+    margin: 0 auto;
+    color: white;
+}
+.feature .container .column .content-col .text p {
+    color: hsl(241, 100%, 89%);
+    line-height: 1.4;
+}
+.feature .container .column .objects {
+    padding:15px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+.feature .container .column .objects h3 {
+    color: hsl(224, 30%, 27%);
+}
+.feature .container .column .objects .obj {
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+    border: 1px solid transparent;
+    padding: 15px;
+    margin-bottom: 15px;
+    align-items: center;
+}
+.feature .container .column .objects .obj .image h4 {
+    display: inline-block;
+    margin: 0;
+    margin-left: 10px;
+    font-weight: 700;
+
+}
+.feature .container .column .objects .obj  h5 {
+    margin: 0;
+    color: hsl(224, 30%, 27%);
+    font-weight: 800;
+}
+.feature .container .column .objects .obj  h5 span{
+    color: hsl(204deg 7.77% 62.16%);
+}
+.feature .container .column .objects .one-obj {
+    background-color: hsl(353.33deg 100% 98.24%);
+}
+.feature .container .column .objects .one-obj .image h4 {
+    color: hsl(0, 100%, 67%);
+}
+.feature .container .column .objects .two-obj .image h4 {
+    color: hsl(39, 100%, 56%);
+}
+.feature .container .column .objects .three-obj .image h4 {
+    color: hsl(166, 100%, 37%);
+}
+.feature .container .column .objects .four-obj .image h4 {
+    color: hsl(234, 85%, 45%);
+}
+.feature .container .column .objects .two-obj {
+    background-color: hsl(32.73deg 100% 97.84%);
+}
+.feature .container .column .objects .three-obj {
+    background-color: hsl(158.18deg 73.33% 97.06%);
+}
+.feature .container .column .objects .four-obj {
+    background-color: hsl(240deg 83.33% 97.65%);
+}
+.feature .container .column .objects .input-cont input {
+    width: 100%;
+    padding: 15px;
+    border-radius: 25px;
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(224, 30%, 27%);
+    font-weight: 600;
+    letter-spacing: .32px;
+    font-size: 16px;
+    border: 1px solid transparent;
+    margin:20px 0;
+}
+.feature .container .column .objects .input-cont input:hover {
+    background-color: hsl(247.98deg 90.38% 59.22%);
+}
+@media (max-width :767px)
+{   
+    .feature {
+        margin: 0;
+        padding: 0;
+    }
+    .feature .container {
+        width: 375px;
+        grid-template-columns: repeat(auto-fill , minmax(375px ,1fr));
+    }
+    .feature .container .column .content-col {
+        border-radius: 0 0 25px 25px;
+    }
+    .feature .container .column .content-col .text {
+        width: 70%;
+    }
+    .feature .container .column .content-col .count {
+        width:165px;
+        height: 160px;
+        margin-top: 25px;
+    }
+    .feature .container .column .content-col .count h1 {
+        margin: 0;
+        padding-top: 30px;
+        font-size: 70px;
+    }
+    .feature .container .column .content-col .count h1 span {
+        font-size: 20px;
+    }
+    .feature .container .column .content-col .text p {
+        margin-bottom: 35px;
+    }
+    .feature .container .column .objects .input-cont input {
+        margin-top: 5px;
+        font-size: 18px;
+    }
+}
